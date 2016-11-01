@@ -1,11 +1,11 @@
 ## Deploying With Google
 
 - service: googleclouddeployment
-  command: deploy_to_google.sh
-
-- service: googleclouddeployment
   type: push
   image_name: gcr.io/greg-brown-sandbox/hellonode
   image_tag: "{{ .Timestamp }}"
   registry: https://gcr.io
   dockercfg_service: gcr_dockercfg
+
+- service: googleclouddeployment
+  command: deploy_to_google.sh
