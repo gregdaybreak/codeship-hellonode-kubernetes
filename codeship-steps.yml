@@ -1,11 +1,11 @@
 ## Deploying With Google
 
-- service: hello-node
+- service: hellonode
   type: push
   image_name: gcr.io/greg-brown-sandbox/hello-node
   image_tag: "{{ .Timestamp }}"
   registry: https://gcr.io
   dockercfg_service: gcr_dockercfg
 
-- service: hello-node
+- service: hellonode
   command: deploy_to_google.sh

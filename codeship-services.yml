@@ -1,6 +1,6 @@
 ### Google Cloud Deployment Service
 
-hello-node:
+hellonode:
   build:
     image: hello-node 
     dockerfile_path: hellonode/Dockerfile
