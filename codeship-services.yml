@@ -1,17 +1,15 @@
 ### Google Cloud Deployment Service
 
-googleclouddeployment:
-	build:
-		image: codeship/google-cloud-deployment
-		dockerfile: hellonode/Dockerfile
-		encrypted_env_file: google_deployment.env.encrypted
-		add_docker: true
-		volumes:
-		  - ./:/deploy
+google_cloud_deployment:
+  image: codeship/google-cloud-deployment
+  add_docker: true
+  encrypted_env_file: google_deployment.env.encrypted
+  volumes:
+    - ./:/deploy
 
 ## Google GCR Authenticator Service
 
 gcr_dockercfg:
-	image: codeship/gcr-dockercfg-generator
-	encrypted_env_file: google_deployment.env.encrypted
-        add_docker: true
+  image: codeship/gcr-dockercfg-generator
+  add_docker: true
+  encrypted_env_file: google_deployment.env.encrypted
