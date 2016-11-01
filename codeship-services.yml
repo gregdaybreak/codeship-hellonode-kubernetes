@@ -1,7 +1,8 @@
 ### Google Cloud Deployment Service
 
 googleclouddeployment:
-  image: codeship/google-cloud-deployment
+  image: gregdaybreak/hellonode
+  dockerfile_path: Dockerfile
   add_docker: true
   encrypted_env_file: google_deployment.env.encrypted
   volumes:
