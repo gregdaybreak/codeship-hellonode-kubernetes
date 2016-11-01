@@ -3,7 +3,7 @@
 hellonode:
   build:
     image: hello-node 
-    dockerfile_path: hellonode/Dockerfile
+    dockerfile: Dockerfile
   add_docker: true
   encrypted_env_file: google_deployment.env.encrypted
   volumes:
