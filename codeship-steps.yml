@@ -8,4 +8,4 @@
   dockercfg_service: gcr_dockercfg
 
 - service: hellonode
-  command: /deploy/deploy_to_google.sh
+  command: sudo /deploy/deploy_to_google.sh
