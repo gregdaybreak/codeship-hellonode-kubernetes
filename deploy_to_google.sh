@@ -16,6 +16,9 @@ gcloud config set compute/zone $DEFAULT_ZONE
 # set kubernetes cluster
 gcloud container clusters get-credentials codeship
 
+#display kubectl version
+GOOGLE_APPLICATION_CREDENTIALS=/keyconfig.json kubectl version
+
 # update kubernetes Deployment
 GOOGLE_APPLICATION_CREDENTIALS=/keyconfig.json kubectl set image deployment/hello-node hello-node=gcr.io/greg-brown-sandbox/hello-node:$CI_COMMIT_ID
 
