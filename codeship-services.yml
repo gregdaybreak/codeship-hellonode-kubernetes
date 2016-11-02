@@ -1,13 +1,17 @@
 ### Google Cloud Deployment Service
 
-hellonode:
-  build:
-    image: hello-node 
-    dockerfile: Dockerfile
+google_cloud_deployment:
+  image: codeship/google-cloud-deployment
   add_docker: true
   encrypted_env_file: google_deployment.env.encrypted
   volumes:
     - ./:/deploy
+
+## Build Docker File for Hello Node App
+hellonode:
+  build:
+    image: hello-node 
+    dockerfile: Dockerfile
 
 ## Google GCR Authenticator Service
 

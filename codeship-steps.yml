@@ -7,5 +7,5 @@
   registry: https://gcr.io
   dockercfg_service: gcr_dockercfg
 
-- service: hellonode
+- service: google_cloud_deployment
   command: /deploy/deploy_to_google.sh
