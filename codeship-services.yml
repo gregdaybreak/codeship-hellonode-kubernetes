@@ -1,7 +1,7 @@
 ### Google Cloud Deployment Service
 
 google_cloud_deployment:
-  image: codeship/google-cloud-deployment
+  image: zachflower/google-cloud-deployment
   add_docker: true
   encrypted_env_file: google_deployment.env.encrypted
   volumes:
